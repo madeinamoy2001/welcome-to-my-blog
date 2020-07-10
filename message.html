@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>♡Message♡</title>
+	<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+<style>
+	*{margin:0px;}
+  #wrapper{height: 500px;}
+  #content {height:500px;
+    top:0px;
+    position: relative;}
+  h1{font-family: none;
+  text-align: center;
+  font-size: 2em;}
+  h3{position:absolute;
+    top: 20px;
+    left:20px;
+    font-size: 2em;
+    text-align: center;}
+ textarea {position: absolute;
+  top:100px;
+left:50px;}
+.button {position: absolute;
+  top:150px;
+right:200px;
+width: 50px;
+height: 30px;}
+#answer {position: absolute;
+bottom:10%;
+left:10%;
+color:#0f0;}
+
+</style>
+	
+</head>
+<body>
+<div id="wrapper">
+  <div id="content">
+<h3>Tell me one of your secrets...</h3>
+<textarea></textarea>
+ <input type="reset" class="button" onclick="yesNo()" value="Send">
+<div id="answer" class="answer a1">
+    <h1 id="yesNo" class="yn1"> <span style="font-size:2em;">?</span></h1>
+</div>
+
+</div>
+</div> <!--wrapper-->
+
+<script>
+function yesNo() {
+
+    var yesNoOptions = ['Stop', 'No', 'What does it mean?', 'Hell No', 'Fuck Yeah!', 'No Way', 'That is too sad', 'Another one', 'I miss you', 'I love you', 'Do not bet on it', 'Is it a joke?', 'For Sure', 'You will regret it', 'Maybe', 'Ugh', 'Excuse me?', 'You are so funny', 'This is boring', 'We should date', 'Okay but'];
+    var yesOrNo = yesNoOptions[Math.floor(Math.random() * yesNoOptions.length)];
+    document.querySelector('#yesNo').innerHTML = yesOrNo;
+
+    // Randomly select CSS
+    var aCSS = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15'];
+    var rCSS = aCSS[Math.floor(Math.random() * aCSS.length)];
+    document.getElementById("yesNo").className = "yn" + rCSS;
+    document.getElementById("answer").className = "answer " + "a" + rCSS;
+}
+</script>
+</body>
+</html>

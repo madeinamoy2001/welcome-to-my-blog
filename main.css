@@ -1,0 +1,95 @@
+
+@font-face {font-family:"Curly";
+src:url("font/JandaCurlygirlChunky.ttf")}
+*{margin:0px;}
+#wrapper {margin-bottom: 0px;
+				width:854px;
+				height:660px;
+				margin-left: auto;
+				margin-right: auto;
+				border: 2px solid #000;}
+.clearfloat {clear:both;}
+#header{background-image: url(img/rose.jpg);
+			background-size: cover;
+			background-position: center;
+			margin-top:0px;}
+h1 {line-height: 200px;
+	font-family: "Curly", fancy;
+	text-align: center;
+	font-size: 3em;}
+h2 {font-family: 'Lakki Reddy', cursive;
+	color:hotpink;
+	font-size: 2em;}
+h3 {font-family: 'Gochi Hand', cursive;
+	background-color:#0f0;
+	font-size: 1.3em;}
+#content{background-image: url(img/roses.jpg);
+position: relative;
+top:10px;
+height:450px;}
+.button {width: 120px;
+		height:auto;
+		background-color: #0f0;
+		cursor: pointer;}
+.button-main {width: 120px;
+		height:auto;
+		background-color: hotpink;
+		cursor: pointer;}
+.button-right {width: 120px;
+		height:auto;
+		float:right;
+		background-color: #0f0;
+		cursor: pointer;}
+.button-send {width: 70px;
+		height:20px;
+		background-color: #0f0;
+		margin-bottom: 10px;
+		cursor: pointer;}
+textarea {width:500px;
+		height:50px;
+		margin-left: 10px;
+		margin-top: 10px;}
+#diary, #comment {background-color: #ddd;
+		border:2px solid #0f0;
+		width:700px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 15px;}
+#diary p {margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;}
+
+#header, #list, #message, #content,#comment {position: relative;
+		z-index: 1;}
+#top-header{position: absolute;
+			bottom:15%;
+			left:4%;
+			z-index: 59;}
+#top-header img {width:120px;
+		height:auto;}
+#top-center{position: absolute;
+			top:1%;
+			left:49%;
+			z-index: 59;}
+#top-center img {width:100px;
+		height:auto;}
+#top-1{position: absolute;
+			bottom:20%;
+			left:25%;
+			z-index: 59;}
+#top-1 img {width:120px;
+		height:auto;}
+#top-2{position: absolute;
+			top:0%;
+			right:0%;
+			z-index: 59;}
+#top-2 img {width:120px;
+		height:auto;}
+#top-3{position: absolute;
+			bottom:0%;
+			right:0%;
+			z-index: 59;}
+#top-3 img {width:100px;
+		height:auto;}
+
+		

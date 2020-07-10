@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>♡Diary 8♡</title>
+	<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+<style>
+	*{margin:0px;}
+h3 {color:hotpink;
+font-size: 2em;
+font-family: 'Gochi Hand', cursive;
+margin-top: 200px;}
+.button {width: 100px;
+  height: 50px;
+    background-color: hotpink;
+    cursor: pointer;}
+#wrapper {text-align: center;
+position: relative;}
+#under{z-index: 1;}
+.draggable{position: absolute;
+  z-index: 99;
+width:250px;
+height: auto;
+cursor: pointer;}
+#one {position: absolute;
+top:10%;
+left:30%}
+#two {position: absolute;
+top:20%;
+left:0%}
+#three {position: absolute;
+top:0%;
+left:40%}
+#four {position: absolute;
+top:0%;
+left:70%}
+#five {position: absolute;
+top:0%;
+left:50%}
+#six {position: absolute;
+top:0%;
+left:10%}
+</style>
+	
+</head>
+<body>
+<div id="wrapper">
+  <img id="one"class="draggable"  src="img/greenp.png" alt="1" style="touch-action:none;">
+  <img class="draggable" id="two" src="img/greenp.png" alt="2" style="touch-action:none;">
+  <img class="draggable" id="three" src="img/greenp.png" alt="3" style="touch-action:none;">
+  <img class="draggable" id="four" src="img/greenp.png" alt="4" style="touch-action:none;">
+  <img class="draggable" id="five" src="img/greenp.png" alt="5" style="touch-action:none;">
+  <img class="draggable" id=six src="img/greenp.png" alt="6" style="touch-action:none;">
+<div id="under">
+  <h3>I wish I could go back to the day we meet...</h3>
+  <br>
+  <input type="button" class="button" value="Yes"
+onclick="javascrtpt:window.location.href='index.html'" />
+<br>
+<br>
+<input type="button" class="button" value="No"
+onclick="javascrtpt:window.location.href='https://www.lejinfan.com/video/welcome-to-my-blog'" />
+</div>
+
+</div> <!--wrapper-->
+
+<script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+<script >var draggableElems = document.querySelectorAll('.draggable');
+// array of Draggabillies
+var draggies = []
+// init Draggabillies
+for ( var i=0; i < draggableElems.length; i++ ) {
+  var draggableElem = draggableElems[i];
+  var draggie = new Draggabilly( draggableElem, {
+    // options...
+  });
+  draggies.push( draggie );
+}
+</script>

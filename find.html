@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>♡Diary 5♡</title>
+	<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+<style>
+	*{margin:0px;}
+h3 {color:hotpink;
+font-family: 'Gochi Hand', cursive;
+font-size: 3em;
+text-align: center;
+padding-top: 100px;}
+#wrapper {margin-top: 0px;
+	margin-bottom: 0px;
+	height:700px;
+				background-color: #0f0;
+				position: relative;}
+#hide {color: #0f0;
+position: absolute; 
+font-size: 10em;
+}
+a:link {color:#0f0; text-decoration:none}
+a:visited {color:#0f0; text-decoration:none}
+a:hover {color:#0f0; text-decoration:none}
+a:active {color:#0f0; text-decoration:none}
+
+</style>
+	
+</head>
+<body>
+<div id="wrapper">
+<h3>
+	Find Me!
+	</h3>
+	<div id="hide"><a href="">♡</a></div>
+
+</div> <!--wrapper-->
+<script>
+
+function init(){
+   var obj=document.getElementsByTagName('html')[0];
+   var obj1=document.getElementById('hide');
+
+   var w=obj.offsetWidth;
+   var h=obj.offsetHeight;
+
+   var l=Math.floor(Math.random()*w);
+   var t=Math.floor(Math.random()*h);
+
+if(l>w-obj1.offsetWidth){
+   l=w-obj1.offsetWidth;
+ }
+if(t>h-obj1.offsetHeight){
+   t=h-obj1.offsetHeight;
+ }
+   obj1.style.left=l+'px';
+   obj1.style.top=t+'px';
+   obj1.className='pstn';
+ }
+
+ window.addEventListener?
+ window.addEventListener('load',init,false):
+ window.attachEvent('onload',init);
+
+</script>
+
+
+</body>
+</html>
